@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.20pt}
+\beamer@sectionintoc {1}{Background}{3}{0}{1}
+\beamer@sectionintoc {2}{Problem Statement}{4}{0}{2}
+\beamer@sectionintoc {3}{Idea of "Wedress"}{6}{0}{3}
+\beamer@sectionintoc {4}{Math Model and Data}{7}{0}{4}
+\beamer@sectionintoc {5}{Milestones}{9}{0}{5}
+\beamer@sectionintoc {6}{Deliverable}{10}{0}{6}

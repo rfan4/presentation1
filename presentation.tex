@@ -1,0 +1,185 @@
+\documentclass[compress,handout,10pt]{beamer}
+
+\newlength{\wideitemsep}
+\setlength{\wideitemsep}{\itemsep}
+\addtolength{\wideitemsep}{100pt}
+\let\olditem\item
+\renewcommand{\item}{\setlength{\itemsep}{0.5\baselineskip}\olditem}
+
+\usetheme{Singapore}
+\usecolortheme{lily}
+\usefonttheme[onlymath]{serif}
+
+\usepackage{float}
+\floatstyle{boxed}
+\usepackage{colortbl}
+\usepackage{mathpazo}
+\usepackage{graphicx}
+\usepackage{movie15}
+\usepackage{bm}
+\usepackage{verbatim}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup[subfigure]{labelformat=empty}
+\captionsetup[figure]{labelformat=empty}
+
+\newcommand{\mygreen}{\color{green!50!black}}
+\newcommand{\myblue}{\color{blue}}
+\newcommand{\myred}{\color{red}}
+\newcommand{\mycolor}{\color{red}{c}\color{blue}{o}\color{green}{l}\color{orange}{o}\color{cyan}{r}}
+\newcommand{\mysize}{\scriptsize{s}\small{i}\normalsize{z}\Large{e}}
+\newcommand{\myshape}{\textcircled{s}\textit{h}\texttt{a}\textsf{p}\textsc{e}}
+
+\xdefinecolor{titlecolor}{rgb}{.855,.647,.125}
+\setbeamercolor{frametitle}{fg=titlecolor}
+\setbeamerfont{frametitle}{series=\bfseries}
+\setbeamercolor{normal text in math text}{parent=math text}
+
+\setbeamertemplate{navigation symbols}{} %gets rid of navigation symbols
+\setbeamertemplate{footline}[frame number]
+\beamertemplateshadingbackground{blue!5}{yellow!10}
+
+\title{{\color{blue} \LARGE Modeling the "Wedress" Daily Dressing Tips\newline} }
+
+\subtitle{{\color{red} \large Project Presentation} }
+
+\author{ 
+%    \vspace{5pt}
+    {\bf{Instructor:}} \\ 
+Rong Fan \\ 
+    \vspace{5pt}
+} 
+\institute{JHU AMS 2012 FALL}
+
+\date{\mygreen Last Complied on \today} 
+
+\begin{document}
+
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
+
+\begin{frame}
+    \frametitle{Outline}
+              \begin{enumerate}
+                 \item Background
+                 \item Problem Statement
+                 \item Idea of "Wedress"
+                 \item Math Model and Data
+                 \item Milestones
+                 \item Deliverable
+             \end{enumerate}
+\end{frame}
+
+\section{Background}
+
+\begin{frame}
+    \frametitle{Background}
+    \vspace{7pt}
+             \begin{itemize}
+                 \item \large The sponsor: Banana Republic
+                 \item Brief introduction of BR
+                 \item BR's new goal
+             \end{itemize}
+\end{frame}
+
+
+
+\section{Problem Statement}
+\begin{frame}
+    \frametitle{Concerns from BR}
+     \begin{enumerate}
+         \item \large Lack of Commercials in Mobile World 
+         \item Bad Rating of Original BR App
+         \item Need An Interesting App about BR
+     \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Goals of New App}
+     \begin{enumerate}
+         \item Interactive with BR and User 
+         \item Gain Positive Brand Image
+         \item Develop Costumer Loyalty
+         \item Bring Profit to the company
+     \end{enumerate}
+\end{frame}
+
+
+\section{Idea of "Wedress"}
+\begin{frame}
+    \frametitle{"Wedress"}
+      \begin{itemize}
+         \item Weather Report 
+         \item Dressing Tips
+         \item BR's New Arrival
+         \item Personalized
+      \end{itemize}
+\end{frame}
+
+\section{Math Model and Data}
+
+\begin{frame}
+    \frametitle{How to build "Wedress"}
+      Linear Regression
+      \begin{itemize}
+         \item Input: Weather Information
+         \item Output: Weather Index
+      \end{itemize}
+     Selection Method
+     \begin{itemize}
+         \item Input: Weather Index
+         \item Output: Dressing Tips
+     \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Data Description}
+     Pre-data
+      \begin{itemize}
+         \item Collect from survey and poll
+         \item Used to build regression and selection method
+      \end{itemize}
+     Post-data
+     \begin{itemize}
+         \item Feed back from user
+         \item Replace pre-data
+         \item Re-build regression
+         \item Personalized
+     \end{itemize}
+\end{frame}
+
+\section{Milestones}
+\begin{frame}
+    \frametitle{Timeline of Project}
+      \begin{itemize}
+         \item Sep.28  Work Statement
+         \item Oct.18  Midterm Presentation
+         \item Oct.26  Progress Report
+         \item Nov.6   Final Presentation
+         \item Nov.30 Final Report and R package
+     \end{itemize}
+\end{frame}
+
+\section{Deliverable}
+\begin{frame}
+    \frametitle{Deliverable Material}
+    From Team to Sponsor
+     \begin{itemize}
+      \item Algorithms for tips generating and self-modify system
+      \item Numerical experiment results reporting performance of the developed algorithms
+      \item R package of the regressiong model and selection method
+    \end{itemize}
+    From Sponsor to Team
+     \begin{itemize}
+       \item Images for latest products
+       \item Comments about the processing
+       \item Additional requirement
+    \end{itemize}
+\end{frame}
+\begin{frame}
+    \LARGE Thank you of listening!
+\end{frame}
+
+\end{document}
